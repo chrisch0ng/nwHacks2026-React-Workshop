@@ -1,18 +1,18 @@
 import "./App.css";
 
 function App() {
-  // const technologies = [
-  //   "TypeScript",
-  //   "React",
-  //   "Node.js",
-  //   "Tailwind",
-  //   "Python",
-  //   "PostgreSQL",
-  //   "Git",
-  //   "Figma",
-  // ];
+  const technologies = [
+    "TypeScript",
+    "React",
+    "Node.js",
+    "Tailwind",
+    "Python",
+    "PostgreSQL",
+    "Git",
+    "Figma",
+  ];
 
-  const firstName = "John";
+  const firstName = "Chris";
 
   return (
     <div>
@@ -110,13 +110,13 @@ function App() {
             </p>
           </div>
 
-          {/* <div className="tech-chips">
+          {<div className="tech-chips">
             {technologies.map((tech) => (
               <span key={tech} className="chip">
                 {tech}
               </span>
             ))}
-          </div> */}
+          </div> }
         </div>
       </section>
     </div>
