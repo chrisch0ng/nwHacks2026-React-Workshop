@@ -1,12 +1,14 @@
-// import { useState } from "react";
+import { useState } from "react";
 import "./About.css";
 
-// const [factIndex, setFactIndex] = useState();
 
-// const handleNextFact = () => {
-//   setFactIndex((prev) => (prev + 1) % funFacts.length);
-// };
 export default function About() {
+
+    const [factIndex, setFactIndex] = useState(0);
+
+    const handleNextFact = () => {
+    setFactIndex((prev) => (prev + 1) % funFacts.length);
+    };
   const funFacts = [
     "I've consumed more coffee than water this semester.",
     "I can solve a Rubik's cube in under 2 minutes.",
@@ -38,13 +40,13 @@ export default function About() {
             aliquip ex ea commodo consequat.
           </p>
 
-          {/* <div className="fun-fact-container">
+          { <div className="fun-fact-container">
             <h4 className="fun-fact-title">Fun Fact:</h4>
             <p className="fun-fact-text">{funFacts[factIndex]}</p>
             <button className="fun-fact-button" onClick={handleNextFact}>
               New Fact!
             </button>
-          </div> */}
+          </div> }
         </div>
 
         <div className="tech-chips">
